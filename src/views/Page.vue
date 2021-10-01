@@ -2,6 +2,7 @@
   <div class="page">
     <h1>{{$route.params.page}}</h1>
     <p>{{this.text()}}</p>
+    //TODO: The above code doesn't work
   </div>
 </template>
 
