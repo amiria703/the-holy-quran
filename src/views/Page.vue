@@ -25,11 +25,6 @@
     }
 
     @font-face {
-        src: url("../assets/QuranTaha.ttf");
-        font-family: "QuranTaha";
-    }
-
-    @font-face {
         src: url("../assets/vazir.ttf");
         font-family: "Vazir FD";
     }
