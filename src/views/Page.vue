@@ -1,4 +1,4 @@
-<template>
+﻿<template>
     <div class="page">
         <img src="../assets/tazhib-landscape.jpg" alt="" id="tazhib">
 
@@ -75,7 +75,7 @@
         },
         mounted() {
             axios
-                .get('http://api.alquran.cloud/v1/page/' + this.$route.params.page + '/quran-uthmani')
+                .get('https://api.alquran.cloud/v1/page/' + this.$route.params.page + '/quran-uthmani')
                 .then(response => (this.texts = response.data.data))
         },
         methods: {
