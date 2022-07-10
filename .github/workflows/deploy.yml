@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     
@@ -27,10 +27,6 @@ jobs:
     - name: Build
       run: npm run build
       
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
     - name: Push
       uses: s0/git-publish-subdir-action@develop
       env:
