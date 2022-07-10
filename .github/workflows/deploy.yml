@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
     
@@ -27,7 +26,9 @@ jobs:
     
     - name: Build
       run: npm run build
+      
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Push
