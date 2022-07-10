@@ -28,7 +28,7 @@ jobs:
       run: npm run build
       
     - name: Rename index to 404
-      run: mv /dist/index.html /dist/404.html
+      run: mv ./dist/index.html ./dist/404.html
       
     - name: Push
       uses: s0/git-publish-subdir-action@develop
